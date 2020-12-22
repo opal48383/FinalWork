@@ -1,7 +1,7 @@
 #-Arduino  
 ##學習Arduino的過程
 -------
-# 12.01.0933-LED.LtoR  
+## 12.01.0933-LED.LtoR  
 int LED = 5;  
 void  setup (){  
   for ( int i = 2 ; i < 6 ; i ++)  
