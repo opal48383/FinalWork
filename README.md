@@ -1,7 +1,8 @@
 # Arduino  
 ### 學習Arduino的過程
 --- 
-#### LED由左至右逐一亮滅
+#### 
+LED由左至右逐一亮滅
 ```c++
 int LED = 5;  
 void  setup (){  
@@ -18,4 +19,4 @@ void  loop (){
     LED = 6;  
     LED --;  
   delay(500);  
-  }```
+  }
