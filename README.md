@@ -341,7 +341,7 @@ void loop() {
      if (b<=-1){b=3;}  
      lcd.setCursor(0, 0);  
      lcd.print(LCD[a]);  
-     lcd.setCursor(0, 1);  
+     lcd.setCursor(0, 1);
      lcd.print(LCD[b]);  
    }  
 }
