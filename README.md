@@ -2,7 +2,7 @@
 ##學習Arduino的過程
 ----
 ###12.01.0933-LED.LtoR  
-```c
+```c++
 int LED = 5;  
 void  setup (){  
   for ( int i = 2 ; i < 6 ; i ++)  
