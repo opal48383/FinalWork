@@ -1,9 +1,25 @@
 # Arduino  
 ### 學習Arduino的過程
 --- 
-#### LED.LtoR
+### LED.Flashing
+將LED閃爍，亮燈100ms，協滅100ms  
+#### 功能如下:  
+```c++
+void  setup (){
+   pinMode(2,OUTPUT);
+}
+
+void  loop (){
+ digitalWrite (2,HIGH);
+ delay (100);
+ digitalWrite (2,LOW);
+ delay(100);
+}
+```
+--- 
+### LED.LtoR
 將LED由左至右逐一亮滅  
-功能如下:  
+#### 功能如下:  
 🔴⚪⚪⚪  
 ⚪🔴⚪⚪  
 ⚪⚪🔴⚪  
@@ -26,9 +42,10 @@ void  loop (){
   delay(500);
 ```
 --- 
-#### BreathingLight
+### BreathingLight
 將LED的亮度由255降至0，再由0升至255  
 做出一個呼吸燈  
+#### 功能如下:   
 ```c++
 int value=255;  
 int x=-15;  
