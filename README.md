@@ -16,6 +16,7 @@ void  loop (){
 }
 ```
 #### 功能如下:
+![](https://github.com/opal48383/FinalWork/raw/20201222_115827.mp4)
 --- 
 ### LED.LtoR
 將LED由左至右逐一亮滅
@@ -388,8 +389,6 @@ void loop() {
     digitalWrite(3,LOW);
   }
   else{digitalWrite(3,HIGH);}
-
-
   
   dht.humidity().getEvent(&event);
   if (isnan(event.relative_humidity)) {
