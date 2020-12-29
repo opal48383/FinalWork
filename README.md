@@ -16,7 +16,7 @@ void  loop (){
 }
 ```
 #### 功能如下:
-![image](https://github.com/opal48383/FinalWork/raw/master/20201222_115827.mp4)
+![mp4](https://github.com/opal48383/FinalWork/raw/master/20201222_115827.mp4)
 --- 
 ### LED.LtoR
 將LED由左至右逐一亮滅
