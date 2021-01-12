@@ -78,7 +78,8 @@ void loop() {
     delay(200);
 }
 ```
-#### 功能如下: 
+#### 功能如下:
+![](https://github.com/opal48383/FinalWork/blob/main/20201201_buttonLED_1.gif)
 --- 
 ### 12.01.1444-RCspeed
 使用Button來切換RC Servo的速度
@@ -123,6 +124,7 @@ void loop() {
 }
 ```
 #### 功能如下: 
+![](https://github.com/opal48383/FinalWork/blob/main/20201201_RCspeed_1.gif)
 --- 
 ### 12.08.0945-HT6751B
 讓風扇自動切換正逆轉
@@ -155,6 +157,7 @@ void brake() {
 }
 ```
 #### 功能如下: 
+![](https://github.com/opal48383/FinalWork/blob/main/20201208_HT6751B_1.gif)
 --- 
 # 12.08.1100-HT6751B.Speed
 使用一顆按鈕控制風扇的開關  
