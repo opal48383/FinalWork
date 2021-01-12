@@ -411,6 +411,7 @@ void loop() {
 使用3軸感測器
 X正轉 點亮一顆燈 | 反轉 點亮另一顆
 Y正轉 點亮一顆燈 | 反轉 點亮另一顆
+```c++
 int Bx=0;
 int By=0;
 int Bz=0;//befor
@@ -479,5 +480,6 @@ void loop() {
   Bz = analogRead(A3);
   delay(200);
 }
+```
 #### 功能如下:
 ![](https://github.com/opal48383/FinalWork/blob/main/20210105_103017_1.gif)
