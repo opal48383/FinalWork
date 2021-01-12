@@ -16,7 +16,7 @@ void  loop (){
 }
 ```
 #### 功能如下:
-![]()
+![](https://github.com/opal48383/FinalWork/blob/main/20201222_115827_1.gif)
 --- 
 ### LED.LtoR
 將LED由左至右逐一亮滅
@@ -38,6 +38,7 @@ void  loop (){
   delay(500);
 ```
 #### 功能如下:
+![](https://github.com/opal48383/FinalWork/blob/main/20201222_LED_LtoR_1.gif)
 --- 
 ### BreathingLight
 將LED的亮度由255降至0，再由0升至255  
@@ -58,6 +59,7 @@ value=value-x;
 }  
 ```
 #### 功能如下: 
+![](https://github.com/opal48383/FinalWork/blob/main/20201222_120037_1.gif)
 --- 
 ### 12.01.1341-ButtonLED
 將LED變成能用手動開關
@@ -351,7 +353,8 @@ void loop() {
    }
 }
 ```
-#### 功能如下: 
+#### 功能如下:
+![](https://github.com/opal48383/FinalWork/blob/main/20201222_LCDupdown_001_1.gif)
 --- 
 # 12.29.1331-DHT  
 讀取溫度及濕度  
@@ -403,3 +406,78 @@ void loop() {
 }
 ```
 #### 功能如下:
+---
+# 01.05.0953-GY.61
+使用3軸感測器
+X正轉 點亮一顆燈 | 反轉 點亮另一顆
+Y正轉 點亮一顆燈 | 反轉 點亮另一顆
+int Bx=0;
+int By=0;
+int Bz=0;//befor
+int Lx=0;//later
+int Ly=0;
+int Lz=0;
+void setup() {
+  pinMode(A1,INPUT);
+  pinMode(A2,INPUT);
+  pinMode(A3,INPUT);
+  pinMode(4,OUTPUT);//x+
+  pinMode(5,OUTPUT);//x-
+  pinMode(8,OUTPUT);//y+
+  pinMode(9,OUTPUT);//y-
+  Serial.begin(9600);
+  delay(100);
+  Serial.println("初始化");
+  delay(100);
+  Bx = analogRead(A1);
+  By = analogRead(A2);
+  Bz = analogRead(A3);
+}
+
+void loop() {
+  Lx = analogRead(A1);
+  Ly = analogRead(A2);
+  Lz = analogRead(A3);
+  Serial.println(" X      Y      Z");
+  Serial.print(Lx);
+  Serial.print("    ");
+  Serial.print(Ly);
+  Serial.print("    ");
+  Serial.println(Lz);
+  
+  if(abs(Lx-Bx) >= 6){
+    if(Lx-Bx > 0) {
+      digitalWrite(4,LOW);
+      digitalWrite(5,HIGH);
+    }
+    else {
+      digitalWrite(4,HIGH);
+      digitalWrite(5,LOW);
+    }
+  }
+  else {
+    digitalWrite(4,HIGH);
+    digitalWrite(5,HIGH);
+  }
+  
+  if(abs(Ly-By) >= 6){
+    if(Ly-By > 0) {
+      digitalWrite(8,LOW);
+      digitalWrite(9,HIGH);
+    }
+    else {
+      digitalWrite(8,HIGH);
+      digitalWrite(9,LOW);
+    }
+  }
+  else {
+      digitalWrite(8,HIGH);
+      digitalWrite(9,HIGH);
+  }
+  Bx = analogRead(A1);
+  By = analogRead(A2);
+  Bz = analogRead(A3);
+  delay(200);
+}
+#### 功能如下:
+![](https://github.com/opal48383/FinalWork/blob/main/20210105_103017_1.gif)
