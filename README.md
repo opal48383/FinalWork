@@ -16,7 +16,7 @@ void  loop (){
 }
 ```
 #### 功能如下:
-![](https://github.com/opal48383/FinalWork/blob/main/20201222_115827.mp4)
+![]()
 --- 
 ### LED.LtoR
 將LED由左至右逐一亮滅
@@ -280,6 +280,7 @@ void Speed(int S) {
     analogWrite (6,0);  
   }  
   ```
+  ![](https://github.com/opal48383/FinalWork/blob/main/20201215_HT6751B_Speed_001_1.gif)
 #### 功能如下: 
 --- 
 # 12.15.1334-LCDupdown
