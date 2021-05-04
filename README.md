@@ -489,7 +489,7 @@ void loop() {
 ---
 # 05.04.1331Joystick
 使用搖桿蘑菇頭來控制風扇轉速&轉向
-'''c++
+```c++
 void setup() {
 Serial.begin(9600);
 pinMode(9,OUTPUT);//IN1
@@ -518,6 +518,7 @@ else
   analogWrite(10,abs(x));
 }
 }
-'''
+```
 #### 功能如下:
+
 ---
